@@ -1,0 +1,1147 @@
+{
+  "status": "APPROVED_CORE_DATA_SELECTION",
+  "code_commit": "c74cc939257cb2565e1132c5fee0b06280d1f45d",
+  "scope": "CGA-Wiki/BNC main BART and Mistral generation/prediction comparisons, preserving the current config inputs without rewriting or deduplicating data.",
+  "recommended": {
+    "file_count": 27,
+    "bytes": 231806020,
+    "MiB": 221.07
+  },
+  "optional_fewer_turn_results": {
+    "additional_file_count": 6,
+    "additional_bytes": 85403363,
+    "additional_MiB": 81.45
+  },
+  "sources_only_alternative": {
+    "file_count": 15,
+    "MiB": 61.11,
+    "description": "Keep only groups whose names end in _original or _so, including cga_legacy_so. This supports retraining/regeneration but does not preserve the stochastic generated inputs used by classifiers."
+  },
+  "original_split_conversations": {
+    "cga_wiki": {
+      "train": 2508,
+      "validation": 840,
+      "test": 840
+    },
+    "bnc": {
+      "train": 2065,
+      "validation": 258,
+      "test": 259
+    }
+  },
+  "groups": [
+    {
+      "name": "cga_wiki_original",
+      "dataset": "cga_wiki",
+      "purpose": "Original conversation splits for baseline classifiers and generator fine-tuning without SO.",
+      "selection": "recommended",
+      "file_count": 3,
+      "bytes": 13898270,
+      "files": [
+        {
+          "path": "data_collection/final_data/cga_wiki/train.jsonl",
+          "bytes": 8243134,
+          "sha256": "d636cbf166dc1bb96e0969c1417fa4da6284fdada7b15751a04795ddfdbd713e",
+          "rows": 2508,
+          "unique_conversation_ids": 2508,
+          "row_types": {
+            "conversations": 2508
+          },
+          "rows_per_id": {
+            "1": 2508
+          },
+          "exact_duplicate_rows": 0,
+          "consumed_by": [
+            {
+              "config": "downstream_task/bart_cga_wiki_no_generation.json",
+              "field": "train_filename"
+            }
+          ]
+        },
+        {
+          "path": "data_collection/final_data/cga_wiki/val.jsonl",
+          "bytes": 2861471,
+          "sha256": "ff9d2b8b1d7a130647b00de2d375f3faf270724e59f9aa686fb89062f49b1252",
+          "rows": 840,
+          "unique_conversation_ids": 840,
+          "row_types": {
+            "conversations": 840
+          },
+          "rows_per_id": {
+            "1": 840
+          },
+          "exact_duplicate_rows": 0,
+          "consumed_by": [
+            {
+              "config": "downstream_task/bart_cga_wiki_no_generation.json",
+              "field": "val_filename"
+            }
+          ]
+        },
+        {
+          "path": "data_collection/final_data/cga_wiki/test.jsonl",
+          "bytes": 2793665,
+          "sha256": "e30669954ebb2dfdfe8a2c0b7166354ae5e6c2ae3514be9db344ef068e7519a4",
+          "rows": 840,
+          "unique_conversation_ids": 840,
+          "row_types": {
+            "conversations": 840
+          },
+          "rows_per_id": {
+            "1": 840
+          },
+          "exact_duplicate_rows": 0,
+          "consumed_by": [
+            {
+              "config": "downstream_task/bart_cga_wiki_no_generation.json",
+              "field": "test_filename"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "cga_legacy_so",
+      "dataset": "cga_wiki",
+      "purpose": "Retain exact inputs used by mistral_cga_wiki_baseline_no_social_orientation.json; speaker formatting differs from corrected files.",
+      "selection": "recommended",
+      "file_count": 3,
+      "bytes": 14557166,
+      "files": [
+        {
+          "path": "data_collection/final_data/cga_wiki/train_circumplex.jsonl",
+          "bytes": 8656411,
+          "sha256": "8ecdc2c60e4d96d872e4ad6e7736220a0670c63d7504629c8e312c8fc76c4c6a",
+          "rows": 2508,
+          "unique_conversation_ids": 2508,
+          "row_types": {
+            "conversations": 2508
+          },
+          "rows_per_id": {
+            "1": 2508
+          },
+          "exact_duplicate_rows": 0,
+          "consumed_by": [
+            {
+              "config": "downstream_task/mistral_cga_wiki_baseline_no_social_orientation.json",
+              "field": "train_filename"
+            }
+          ]
+        },
+        {
+          "path": "data_collection/final_data/cga_wiki/val_circumplex.jsonl",
+          "bytes": 2999846,
+          "sha256": "9fa6d6fb8209f111e9449e23346d74ed58585c2bacb1ea727c4c5043d12c3cec",
+          "rows": 840,
+          "unique_conversation_ids": 840,
+          "row_types": {
+            "conversations": 840
+          },
+          "rows_per_id": {
+            "1": 840
+          },
+          "exact_duplicate_rows": 0,
+          "consumed_by": [
+            {
+              "config": "downstream_task/mistral_cga_wiki_baseline_no_social_orientation.json",
+              "field": "val_filename"
+            }
+          ]
+        },
+        {
+          "path": "data_collection/final_data/cga_wiki/test_circumplex.jsonl",
+          "bytes": 2900909,
+          "sha256": "852977c33caac3ff5d658176f2d53b86c8fdf895cdd78fce0a54fece1d78527a",
+          "rows": 840,
+          "unique_conversation_ids": 840,
+          "row_types": {
+            "conversations": 840
+          },
+          "rows_per_id": {
+            "1": 840
+          },
+          "exact_duplicate_rows": 0,
+          "consumed_by": [
+            {
+              "config": "downstream_task/mistral_cga_wiki_baseline_no_social_orientation.json",
+              "field": "test_filename"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "cga_wiki_so",
+      "dataset": "cga_wiki",
+      "purpose": "Annotated source splits for SO baselines and generator fine-tuning.",
+      "selection": "recommended",
+      "file_count": 3,
+      "bytes": 15383580,
+      "files": [
+        {
+          "path": "data_collection/final_data/cga_wiki/train_circumplex_fixed.jsonl",
+          "bytes": 9135596,
+          "sha256": "ee7d16a498adb4e67e5b8b9c253d3a42f5963dc76e15a3db1a635d114c7b9734",
+          "rows": 2508,
+          "unique_conversation_ids": 2508,
+          "row_types": {
+            "conversations": 2508
+          },
+          "rows_per_id": {
+            "1": 2508
+          },
+          "exact_duplicate_rows": 0,
+          "consumed_by": [
+            {
+              "config": "downstream_task/bart_cga_wiki_first_2_turns_baseline.json",
+              "field": "train_filename"
+            },
+            {
+              "config": "downstream_task/bart_cga_wiki_first_4_turns_baseline.json",
+              "field": "train_filename"
+            },
+            {
+              "config": "downstream_task/bart_cga_wiki_no_generation_with_social_tags.json",
+              "field": "train_filename"
+            },
+            {
+              "config": "downstream_task/mistral_cga_wiki_first_2_turns_baseline.json",
+              "field": "train_filename"
+            },
+            {
+              "config": "downstream_task/mistral_cga_wiki_first_4_turns_baseline.json",
+              "field": "train_filename"
+            },
+            {
+              "config": "downstream_task/mistral_cga_wiki_social_orientation.json",
+              "field": "train_filename"
+            },
+            {
+              "config": "llm/config_mistral_cga_wiki_all_but_last_turns.json",
+              "field": "train_filename"
+            },
+            {
+              "config": "llm/config_mistral_cga_wiki_first_2_turns.json",
+              "field": "train_filename"
+            },
+            {
+              "config": "llm/config_mistral_cga_wiki_first_4_turns.json",
+              "field": "train_filename"
+            }
+          ]
+        },
+        {
+          "path": "data_collection/final_data/cga_wiki/val_circumplex_fixed.jsonl",
+          "bytes": 3158422,
+          "sha256": "59d558405fb8a4ea5fcd1912eb07f850a2c54c8686abba3fd2b78c8ba01b2fb0",
+          "rows": 840,
+          "unique_conversation_ids": 840,
+          "row_types": {
+            "conversations": 840
+          },
+          "rows_per_id": {
+            "1": 840
+          },
+          "exact_duplicate_rows": 0,
+          "consumed_by": [
+            {
+              "config": "downstream_task/bart_cga_wiki_first_2_turns_baseline.json",
+              "field": "val_filename"
+            },
+            {
+              "config": "downstream_task/bart_cga_wiki_first_4_turns_baseline.json",
+              "field": "val_filename"
+            },
+            {
+              "config": "downstream_task/bart_cga_wiki_no_generation_with_social_tags.json",
+              "field": "val_filename"
+            },
+            {
+              "config": "downstream_task/mistral_cga_wiki_first_2_turns_baseline.json",
+              "field": "val_filename"
+            },
+            {
+              "config": "downstream_task/mistral_cga_wiki_first_4_turns_baseline.json",
+              "field": "val_filename"
+            },
+            {
+              "config": "downstream_task/mistral_cga_wiki_social_orientation.json",
+              "field": "val_filename"
+            },
+            {
+              "config": "llm/config_mistral_cga_wiki_all_but_last_turns.json",
+              "field": "val_filename"
+            },
+            {
+              "config": "llm/config_mistral_cga_wiki_first_2_turns.json",
+              "field": "val_filename"
+            },
+            {
+              "config": "llm/config_mistral_cga_wiki_first_4_turns.json",
+              "field": "val_filename"
+            }
+          ]
+        },
+        {
+          "path": "data_collection/final_data/cga_wiki/test_circumplex_fixed.jsonl",
+          "bytes": 3089562,
+          "sha256": "f1a95b1a45ca947c8aa7d2f0c3e0fddcceb045489b696277718c9566cb418270",
+          "rows": 840,
+          "unique_conversation_ids": 840,
+          "row_types": {
+            "conversations": 840
+          },
+          "rows_per_id": {
+            "1": 840
+          },
+          "exact_duplicate_rows": 0,
+          "consumed_by": [
+            {
+              "config": "downstream_task/bart_cga_wiki_first_2_turns_baseline.json",
+              "field": "test_filename"
+            },
+            {
+              "config": "downstream_task/bart_cga_wiki_first_4_turns_baseline.json",
+              "field": "test_filename"
+            },
+            {
+              "config": "downstream_task/bart_cga_wiki_no_generation_with_social_tags.json",
+              "field": "test_filename"
+            },
+            {
+              "config": "downstream_task/mistral_cga_wiki_first_2_turns_baseline.json",
+              "field": "test_filename"
+            },
+            {
+              "config": "downstream_task/mistral_cga_wiki_first_4_turns_baseline.json",
+              "field": "test_filename"
+            },
+            {
+              "config": "downstream_task/mistral_cga_wiki_social_orientation.json",
+              "field": "test_filename"
+            },
+            {
+              "config": "llm/config_mistral_cga_wiki_all_but_last_turns.json",
+              "field": "test_filename"
+            },
+            {
+              "config": "llm/config_mistral_cga_wiki_first_2_turns.json",
+              "field": "test_filename"
+            },
+            {
+              "config": "llm/config_mistral_cga_wiki_first_4_turns.json",
+              "field": "test_filename"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "cga_wiki_generated",
+      "dataset": "cga_wiki",
+      "purpose": "Without-SO main classifier inputs. Training combines one original and two generated rows per conversation; validation/test have five generated rows.",
+      "selection": "recommended",
+      "file_count": 3,
+      "bytes": 50433075,
+      "files": [
+        {
+          "path": "data_collection/final_data/cga_wiki/train_aug.jsonl",
+          "bytes": 24117060,
+          "sha256": "03321a89d49a1291ab0226be5adc711137e95289ada7dc9b04884aca83f2a421",
+          "rows": 7524,
+          "unique_conversation_ids": 2508,
+          "row_types": {
+            "all_text": 5016,
+            "conversations": 2508
+          },
+          "rows_per_id": {
+            "3": 2508
+          },
+          "exact_duplicate_rows": 9,
+          "consumed_by": [
+            {
+              "config": "downstream_task/bart_cga_wiki_generation.json",
+              "field": "train_filename"
+            },
+            {
+              "config": "downstream_task/mistral_cga_wiki_generation.json",
+              "field": "train_filename"
+            }
+          ]
+        },
+        {
+          "path": "data_collection/final_data/cga_wiki/val_aug.jsonl",
+          "bytes": 13497508,
+          "sha256": "eec62a2016132b8b4c2dae06281b31a3a5862e9e5f95a4f148977fed9a386ad5",
+          "rows": 4200,
+          "unique_conversation_ids": 840,
+          "row_types": {
+            "all_text": 4200
+          },
+          "rows_per_id": {
+            "5": 840
+          },
+          "exact_duplicate_rows": 10,
+          "consumed_by": [
+            {
+              "config": "downstream_task/bart_cga_wiki_generation.json",
+              "field": "val_filename"
+            },
+            {
+              "config": "downstream_task/mistral_cga_wiki_generation.json",
+              "field": "val_filename"
+            }
+          ]
+        },
+        {
+          "path": "data_collection/final_data/cga_wiki/test_aug.jsonl",
+          "bytes": 12818507,
+          "sha256": "5e8cde60b93ed5614053b2a4ae8540d68d9822b233a70f77d069c619704123f0",
+          "rows": 4200,
+          "unique_conversation_ids": 840,
+          "row_types": {
+            "all_text": 4200
+          },
+          "rows_per_id": {
+            "5": 840
+          },
+          "exact_duplicate_rows": 12,
+          "consumed_by": [
+            {
+              "config": "downstream_task/bart_cga_wiki_generation.json",
+              "field": "test_filename"
+            },
+            {
+              "config": "downstream_task/mistral_cga_wiki_generation.json",
+              "field": "test_filename"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "cga_wiki_so_generated",
+      "dataset": "cga_wiki",
+      "purpose": "With-SO main classifier inputs. Preserve historical row ordering and multiplicity; BNC has extra samples.",
+      "selection": "recommended",
+      "file_count": 3,
+      "bytes": 49747781,
+      "files": [
+        {
+          "path": "data_collection/final_data/cga_wiki/train_circumplex_fixed_aug_latest_ckpt_combined.jsonl",
+          "bytes": 24125088,
+          "sha256": "48a980444d4fcc0c3924eec4e2d5c5a68d63aa33dffb3e8c6d1a25c9c39a56ff",
+          "rows": 7524,
+          "unique_conversation_ids": 2508,
+          "row_types": {
+            "conversations": 2508,
+            "all_text": 5016
+          },
+          "rows_per_id": {
+            "3": 2508
+          },
+          "exact_duplicate_rows": 1,
+          "consumed_by": [
+            {
+              "config": "downstream_task/bart_cga_wiki_generation_with_social_tags.json",
+              "field": "train_filename"
+            },
+            {
+              "config": "downstream_task/mistral_cga_wiki_generation_social_orientation.json",
+              "field": "train_filename"
+            }
+          ]
+        },
+        {
+          "path": "data_collection/final_data/cga_wiki/val_circumplex_fixed_aug_latest_ckpt.jsonl",
+          "bytes": 13158332,
+          "sha256": "a2f327d0cf9db5eead04c6cd360cc82bc8f0b2a1656264a7129c18af41855ea7",
+          "rows": 4200,
+          "unique_conversation_ids": 840,
+          "row_types": {
+            "all_text": 4200
+          },
+          "rows_per_id": {
+            "5": 840
+          },
+          "exact_duplicate_rows": 0,
+          "consumed_by": [
+            {
+              "config": "downstream_task/bart_cga_wiki_generation_with_social_tags.json",
+              "field": "val_filename"
+            },
+            {
+              "config": "downstream_task/mistral_cga_wiki_generation_social_orientation.json",
+              "field": "val_filename"
+            }
+          ]
+        },
+        {
+          "path": "data_collection/final_data/cga_wiki/test_circumplex_fixed_aug_latest_ckpt.jsonl",
+          "bytes": 12464361,
+          "sha256": "43c01b7efe4691987933bc7e8a1411c50851b7e083a0416e3d953325dd2382e0",
+          "rows": 4200,
+          "unique_conversation_ids": 840,
+          "row_types": {
+            "all_text": 4200
+          },
+          "rows_per_id": {
+            "5": 840
+          },
+          "exact_duplicate_rows": 5,
+          "consumed_by": [
+            {
+              "config": "downstream_task/bart_cga_wiki_generation_with_social_tags.json",
+              "field": "test_filename"
+            },
+            {
+              "config": "downstream_task/mistral_cga_wiki_generation_social_orientation.json",
+              "field": "test_filename"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "bnc_original",
+      "dataset": "bnc",
+      "purpose": "Original conversation splits for baseline classifiers and generator fine-tuning without SO.",
+      "selection": "recommended",
+      "file_count": 3,
+      "bytes": 9778165,
+      "files": [
+        {
+          "path": "data_collection/final_data/bnc/train.jsonl",
+          "bytes": 7884767,
+          "sha256": "6d97da38b5829821750a1d806030bacd6996bcc99ea375c96a69245a73f57d97",
+          "rows": 2065,
+          "unique_conversation_ids": 2065,
+          "row_types": {
+            "conversations": 2065
+          },
+          "rows_per_id": {
+            "1": 2065
+          },
+          "exact_duplicate_rows": 0,
+          "consumed_by": [
+            {
+              "config": "downstream_task/bart_bnc_baseline.json",
+              "field": "train_filename"
+            },
+            {
+              "config": "downstream_task/mistral_bnc_aug_baseline.json",
+              "field": "train_filename"
+            },
+            {
+              "config": "llm/config_mistral_bnc.json",
+              "field": "train_filename"
+            }
+          ]
+        },
+        {
+          "path": "data_collection/final_data/bnc/val.jsonl",
+          "bytes": 1035796,
+          "sha256": "22c8ac93def1737cbe5a915b92a7921bfc8ad7a4ae1fb2c7b12e01cddf0237b6",
+          "rows": 258,
+          "unique_conversation_ids": 258,
+          "row_types": {
+            "conversations": 258
+          },
+          "rows_per_id": {
+            "1": 258
+          },
+          "exact_duplicate_rows": 0,
+          "consumed_by": [
+            {
+              "config": "downstream_task/bart_bnc_baseline.json",
+              "field": "val_filename"
+            },
+            {
+              "config": "downstream_task/mistral_bnc_aug_baseline.json",
+              "field": "val_filename"
+            },
+            {
+              "config": "llm/config_mistral_bnc.json",
+              "field": "val_filename"
+            },
+            {
+              "config": "llm/config_mistral_bnc.json",
+              "field": "generation_dataset"
+            }
+          ]
+        },
+        {
+          "path": "data_collection/final_data/bnc/test.jsonl",
+          "bytes": 857602,
+          "sha256": "96c3b31339d3b2fef78cb5b050a37091a47fef834288be6d941ac7d7febb1576",
+          "rows": 259,
+          "unique_conversation_ids": 259,
+          "row_types": {
+            "conversations": 259
+          },
+          "rows_per_id": {
+            "1": 259
+          },
+          "exact_duplicate_rows": 0,
+          "consumed_by": [
+            {
+              "config": "downstream_task/bart_bnc_baseline.json",
+              "field": "test_filename"
+            },
+            {
+              "config": "downstream_task/mistral_bnc_aug_baseline.json",
+              "field": "test_filename"
+            },
+            {
+              "config": "llm/config_mistral_bnc.json",
+              "field": "test_filename"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "bnc_so",
+      "dataset": "bnc",
+      "purpose": "Annotated source splits for SO baselines and generator fine-tuning.",
+      "selection": "recommended",
+      "file_count": 3,
+      "bytes": 10457526,
+      "files": [
+        {
+          "path": "data_collection/final_data/bnc/train_circumplex.jsonl",
+          "bytes": 8426232,
+          "sha256": "8be1c34f5815565c88eaec53e2de073c2c6d8d1f36676896e6b6952ec0d20761",
+          "rows": 2065,
+          "unique_conversation_ids": 2065,
+          "row_types": {
+            "conversations": 2065
+          },
+          "rows_per_id": {
+            "1": 2065
+          },
+          "exact_duplicate_rows": 0,
+          "consumed_by": [
+            {
+              "config": "downstream_task/bart_bnc_circumplex.json",
+              "field": "train_filename"
+            },
+            {
+              "config": "downstream_task/mistral_bnc_social_orientation.json",
+              "field": "train_filename"
+            },
+            {
+              "config": "llm/config_mistral_bnc_circumplex.json",
+              "field": "train_filename"
+            }
+          ]
+        },
+        {
+          "path": "data_collection/final_data/bnc/val_circumplex.jsonl",
+          "bytes": 1104241,
+          "sha256": "cdfacf22767c2a23cb98c9e3d6b3c813b19e630899f79a921497b13cd42a3e14",
+          "rows": 258,
+          "unique_conversation_ids": 258,
+          "row_types": {
+            "conversations": 258
+          },
+          "rows_per_id": {
+            "1": 258
+          },
+          "exact_duplicate_rows": 0,
+          "consumed_by": [
+            {
+              "config": "downstream_task/bart_bnc_circumplex.json",
+              "field": "val_filename"
+            },
+            {
+              "config": "downstream_task/mistral_bnc_social_orientation.json",
+              "field": "val_filename"
+            },
+            {
+              "config": "llm/config_mistral_bnc_circumplex.json",
+              "field": "val_filename"
+            }
+          ]
+        },
+        {
+          "path": "data_collection/final_data/bnc/test_circumplex.jsonl",
+          "bytes": 927053,
+          "sha256": "52f22929566c1b62210ff10d408e20a159e354d25f4a9f99e8bd94b2ee008daa",
+          "rows": 259,
+          "unique_conversation_ids": 259,
+          "row_types": {
+            "conversations": 259
+          },
+          "rows_per_id": {
+            "1": 259
+          },
+          "exact_duplicate_rows": 0,
+          "consumed_by": [
+            {
+              "config": "downstream_task/bart_bnc_circumplex.json",
+              "field": "test_filename"
+            },
+            {
+              "config": "downstream_task/mistral_bnc_social_orientation.json",
+              "field": "test_filename"
+            },
+            {
+              "config": "llm/config_mistral_bnc_circumplex.json",
+              "field": "test_filename"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "bnc_generated",
+      "dataset": "bnc",
+      "purpose": "Without-SO main classifier inputs. Training combines one original and two generated rows per conversation; validation/test have five generated rows.",
+      "selection": "recommended",
+      "file_count": 3,
+      "bytes": 32899354,
+      "files": [
+        {
+          "path": "data_collection/final_data/bnc/train_aug.jsonl",
+          "bytes": 23432008,
+          "sha256": "0ecf66b5ffbcea7056da162f1f598cd21ff5a6ad1481e449b2070b75d72468bc",
+          "rows": 6195,
+          "unique_conversation_ids": 2065,
+          "row_types": {
+            "all_text": 4130,
+            "conversations": 2065
+          },
+          "rows_per_id": {
+            "3": 2065
+          },
+          "exact_duplicate_rows": 9,
+          "consumed_by": [
+            {
+              "config": "downstream_task/bart_bnc_aug.json",
+              "field": "train_filename"
+            },
+            {
+              "config": "downstream_task/mistral_bnc_aug.json",
+              "field": "train_filename"
+            }
+          ]
+        },
+        {
+          "path": "data_collection/final_data/bnc/val_aug.jsonl",
+          "bytes": 5138851,
+          "sha256": "410d4ef47edaee0fa400cd21c6e4aa071513c9da30dc90e7ea4e5fe63a0f4985",
+          "rows": 1290,
+          "unique_conversation_ids": 258,
+          "row_types": {
+            "all_text": 1290
+          },
+          "rows_per_id": {
+            "5": 258
+          },
+          "exact_duplicate_rows": 15,
+          "consumed_by": [
+            {
+              "config": "downstream_task/bart_bnc_aug.json",
+              "field": "val_filename"
+            },
+            {
+              "config": "downstream_task/mistral_bnc_aug.json",
+              "field": "val_filename"
+            }
+          ]
+        },
+        {
+          "path": "data_collection/final_data/bnc/test_aug.jsonl",
+          "bytes": 4328495,
+          "sha256": "cf637003a411c978ae87d975718693114942e6eb89937527cab33570344e65ce",
+          "rows": 1295,
+          "unique_conversation_ids": 259,
+          "row_types": {
+            "all_text": 1295
+          },
+          "rows_per_id": {
+            "5": 259
+          },
+          "exact_duplicate_rows": 13,
+          "consumed_by": [
+            {
+              "config": "downstream_task/bart_bnc_aug.json",
+              "field": "test_filename"
+            },
+            {
+              "config": "downstream_task/mistral_bnc_aug.json",
+              "field": "test_filename"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "bnc_so_generated",
+      "dataset": "bnc",
+      "purpose": "With-SO main classifier inputs. Preserve historical row ordering and multiplicity; BNC has extra samples.",
+      "selection": "recommended",
+      "file_count": 3,
+      "bytes": 34651103,
+      "files": [
+        {
+          "path": "data_collection/final_data/bnc/train_circumplex_aug_latest_ckpt_combined.jsonl",
+          "bytes": 24609399,
+          "sha256": "d97e3a86ca4b2bc5a7f339e0811c99a705204724a2a382ec99a2569e7ed11dd2",
+          "rows": 6201,
+          "unique_conversation_ids": 2065,
+          "row_types": {
+            "conversations": 2065,
+            "all_text": 4136
+          },
+          "rows_per_id": {
+            "3": 2059,
+            "4": 6
+          },
+          "exact_duplicate_rows": 7,
+          "consumed_by": [
+            {
+              "config": "downstream_task/bart_bnc_circumplex_generation.json",
+              "field": "train_filename"
+            },
+            {
+              "config": "downstream_task/mistral_bnc_generation_social_orientation.json",
+              "field": "train_filename"
+            }
+          ]
+        },
+        {
+          "path": "data_collection/final_data/bnc/val_circumplex_aug_latest_ckpt.jsonl",
+          "bytes": 5526402,
+          "sha256": "57379337cbf2a63eb58fbb2d9ee9785bd8f53ccdb310d36b1f74918d70593f97",
+          "rows": 1300,
+          "unique_conversation_ids": 258,
+          "row_types": {
+            "all_text": 1300
+          },
+          "rows_per_id": {
+            "5": 248,
+            "6": 10
+          },
+          "exact_duplicate_rows": 6,
+          "consumed_by": [
+            {
+              "config": "downstream_task/bart_bnc_circumplex_generation.json",
+              "field": "val_filename"
+            },
+            {
+              "config": "downstream_task/mistral_bnc_generation_social_orientation.json",
+              "field": "val_filename"
+            }
+          ]
+        },
+        {
+          "path": "data_collection/final_data/bnc/test_circumplex_aug_latest_ckpt.jsonl",
+          "bytes": 4515302,
+          "sha256": "b2f0567e6e8f9e647138a49adf4f0e84f93ac146b1b3e42f2844e79d33e03c6b",
+          "rows": 1300,
+          "unique_conversation_ids": 259,
+          "row_types": {
+            "all_text": 1300
+          },
+          "rows_per_id": {
+            "5": 254,
+            "6": 5
+          },
+          "exact_duplicate_rows": 9,
+          "consumed_by": [
+            {
+              "config": "downstream_task/bart_bnc_circumplex_generation.json",
+              "field": "test_filename"
+            },
+            {
+              "config": "downstream_task/mistral_bnc_generation_social_orientation.json",
+              "field": "test_filename"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "cga_first_2_turns",
+      "dataset": "cga_wiki",
+      "purpose": "Additional generated inputs for the 2-observed-turn CGA classifiers. Source splits already included in the main selection.",
+      "selection": "optional_fewer_turn_results",
+      "file_count": 3,
+      "bytes": 40496882,
+      "files": [
+        {
+          "path": "data_collection/final_data/cga_wiki/train_circumplex_fixed_aug_first_2_ignore_header_combined.jsonl",
+          "bytes": 20917097,
+          "sha256": "2f33001824bd20502006b389f86b4c888c11e7f5689d26a53339001958b3d809",
+          "rows": 7524,
+          "unique_conversation_ids": 2508,
+          "row_types": {
+            "all_text": 5016,
+            "conversations": 2508
+          },
+          "rows_per_id": {
+            "3": 2508
+          },
+          "exact_duplicate_rows": 0,
+          "consumed_by": [
+            {
+              "config": "downstream_task/bart_cga_wiki_augmented_first_2_turns_no_social_orientation.json",
+              "field": "train_filename"
+            },
+            {
+              "config": "downstream_task/mistral_cga_wiki_first_2_turns_aug.json",
+              "field": "train_filename"
+            }
+          ]
+        },
+        {
+          "path": "data_collection/final_data/cga_wiki/val_circumplex_fixed_aug_first_2_ignore_header.jsonl",
+          "bytes": 9795294,
+          "sha256": "139096f74662978d3b78aa51a5ee2f6633d200c05586e8d5154f67b3ba079c0f",
+          "rows": 4200,
+          "unique_conversation_ids": 840,
+          "row_types": {
+            "all_text": 4200
+          },
+          "rows_per_id": {
+            "5": 840
+          },
+          "exact_duplicate_rows": 1,
+          "consumed_by": [
+            {
+              "config": "downstream_task/bart_cga_wiki_augmented_first_2_turns_no_social_orientation.json",
+              "field": "val_filename"
+            },
+            {
+              "config": "downstream_task/mistral_cga_wiki_first_2_turns_aug.json",
+              "field": "val_filename"
+            }
+          ]
+        },
+        {
+          "path": "data_collection/final_data/cga_wiki/test_circumplex_fixed_aug_first_2_ignore_header.jsonl",
+          "bytes": 9784491,
+          "sha256": "2b892956752f4efac112439b5a8893444a1fcd8a16149232399bc0cc3121488e",
+          "rows": 4200,
+          "unique_conversation_ids": 840,
+          "row_types": {
+            "all_text": 4200
+          },
+          "rows_per_id": {
+            "5": 840
+          },
+          "exact_duplicate_rows": 2,
+          "consumed_by": [
+            {
+              "config": "downstream_task/bart_cga_wiki_augmented_first_2_turns_no_social_orientation.json",
+              "field": "test_filename"
+            },
+            {
+              "config": "downstream_task/mistral_cga_wiki_first_2_turns_aug.json",
+              "field": "test_filename"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "cga_first_4_turns",
+      "dataset": "cga_wiki",
+      "purpose": "Additional generated inputs for the 4-observed-turn CGA classifiers. Source splits already included in the main selection.",
+      "selection": "optional_fewer_turn_results",
+      "file_count": 3,
+      "bytes": 44906481,
+      "files": [
+        {
+          "path": "data_collection/final_data/cga_wiki/train_circumplex_fixed_aug_first_4_ignore_header_combined.jsonl",
+          "bytes": 22451703,
+          "sha256": "2e4ef8bc363eb13836a4ef4c38454992ccb2a14f40507fd634a4ced3415ff10f",
+          "rows": 7524,
+          "unique_conversation_ids": 2508,
+          "row_types": {
+            "all_text": 5016,
+            "conversations": 2508
+          },
+          "rows_per_id": {
+            "3": 2508
+          },
+          "exact_duplicate_rows": 0,
+          "consumed_by": [
+            {
+              "config": "downstream_task/bart_cga_wiki_augmented_first_4_turns_no_social_orientation.json",
+              "field": "train_filename"
+            },
+            {
+              "config": "downstream_task/mistral_cga_wiki_first_4_turns_aug.json",
+              "field": "train_filename"
+            }
+          ]
+        },
+        {
+          "path": "data_collection/final_data/cga_wiki/val_circumplex_fixed_aug_first_4_ignore_header.jsonl",
+          "bytes": 11314088,
+          "sha256": "3d8d9abcbec2f308fa8173946a19fb59527d694c38c936c9bf73698f5fc568e2",
+          "rows": 4200,
+          "unique_conversation_ids": 840,
+          "row_types": {
+            "all_text": 4200
+          },
+          "rows_per_id": {
+            "5": 840
+          },
+          "exact_duplicate_rows": 3,
+          "consumed_by": [
+            {
+              "config": "downstream_task/bart_cga_wiki_augmented_first_4_turns_no_social_orientation.json",
+              "field": "val_filename"
+            },
+            {
+              "config": "downstream_task/mistral_cga_wiki_first_4_turns_aug.json",
+              "field": "val_filename"
+            }
+          ]
+        },
+        {
+          "path": "data_collection/final_data/cga_wiki/test_circumplex_fixed_aug_first_4_ignore_header.jsonl",
+          "bytes": 11140690,
+          "sha256": "2568c5e9d1bfecfd8c0faadfe1ff83e0aa0f4d8c6c8e8f6581bd592784f7789a",
+          "rows": 4200,
+          "unique_conversation_ids": 840,
+          "row_types": {
+            "all_text": 4200
+          },
+          "rows_per_id": {
+            "5": 840
+          },
+          "exact_duplicate_rows": 2,
+          "consumed_by": [
+            {
+              "config": "downstream_task/bart_cga_wiki_augmented_first_4_turns_no_social_orientation.json",
+              "field": "test_filename"
+            },
+            {
+              "config": "downstream_task/mistral_cga_wiki_first_4_turns_aug.json",
+              "field": "test_filename"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "JSON_parsing_and_required_keys": "passed for every selected file",
+    "labels_within_conversation": "consistent in each selected file",
+    "source_generated_id_and_label_alignment": "passed within the correct plain/SO family; no generated IDs in a different source split",
+    "original_split_checks": [
+      {
+        "dataset": "cga_wiki",
+        "splits": [
+          "train",
+          "val"
+        ],
+        "shared_episode_ids": 0,
+        "shared_exact_text_signatures": 0
+      },
+      {
+        "dataset": "cga_wiki",
+        "splits": [
+          "train",
+          "test"
+        ],
+        "shared_episode_ids": 0,
+        "shared_exact_text_signatures": 0
+      },
+      {
+        "dataset": "cga_wiki",
+        "splits": [
+          "val",
+          "test"
+        ],
+        "shared_episode_ids": 0,
+        "shared_exact_text_signatures": 0
+      },
+      {
+        "dataset": "bnc",
+        "splits": [
+          "train",
+          "val"
+        ],
+        "shared_episode_ids": 0,
+        "shared_exact_text_signatures": 0
+      },
+      {
+        "dataset": "bnc",
+        "splits": [
+          "train",
+          "test"
+        ],
+        "shared_episode_ids": 0,
+        "shared_exact_text_signatures": 0
+      },
+      {
+        "dataset": "bnc",
+        "splits": [
+          "val",
+          "test"
+        ],
+        "shared_episode_ids": 0,
+        "shared_exact_text_signatures": 0
+      }
+    ],
+    "cga_plain_to_fixed_so_alignment": "Every annotated conversation matches a plain conversation in its corresponding split by the complete whitespace-normalized content sequence and label. IDs, speaker names, and whitespace differ; do not join these versions directly by episode_title.",
+    "scope_limit": "ID and exact-conversation-content checks do not establish absence of shared users, threads, individual utterances, or semantic overlap."
+  },
+  "preserve_and_document": [
+    {
+      "file": "data_collection/final_data/bnc/train_circumplex_aug_latest_ckpt_combined.jsonl",
+      "finding": "6201 rows: 2065 original + 4136 generated; six IDs have three rather than two continuations."
+    },
+    {
+      "file": "data_collection/final_data/bnc/val_circumplex_aug_latest_ckpt.jsonl",
+      "finding": "1300 generated rows; 248 IDs have five samples and 10 IDs have six."
+    },
+    {
+      "file": "data_collection/final_data/bnc/test_circumplex_aug_latest_ckpt.jsonl",
+      "finding": "1300 generated rows; 254 IDs have five samples and five IDs have six."
+    },
+    {
+      "finding": "Some generated continuations repeat verbatim. Preserve existing rows for historical reproducibility; deduplication changes the training distribution or voting weights."
+    },
+    {
+      "file": "data_collection/final_data/cga_wiki/train_circumplex_fixed_aug_latest_ckpt_combined.jsonl",
+      "finding": "Contains 2508 original-form records and 5016 generated records. Original-form conversation text matches corrected SO data after whitespace normalization, but is_section_header fields are omitted. This is not a bytewise concatenation of the current source file."
+    }
+  ],
+  "deferred": {
+    "four_dimensional_cga": {
+      "source_files": [
+        {
+          "path": "data_collection/final_data/cga_wiki/train_new_circumplex.jsonl",
+          "rows": 2508
+        },
+        {
+          "path": "data_collection/final_data/cga_wiki/val_new_circumplex.jsonl",
+          "rows": 839
+        },
+        {
+          "path": "data_collection/final_data/cga_wiki/test_new_circumplex.jsonl",
+          "rows": 840
+        }
+      ],
+      "reason": "Incomplete alternative: validation has 839 instead of 840 conversations, and the selected classifier references three absent generated input files.",
+      "missing_generated_files": [
+        "data_collection/final_data/cga_wiki/train_new_circumplex_fixed_aug_combined.jsonl",
+        "data_collection/final_data/cga_wiki/val_new_circumplex_fixed_aug.jsonl",
+        "data_collection/final_data/cga_wiki/test_new_circumplex_fixed_aug.jsonl"
+      ]
+    },
+    "missing_generation_default_subsets": [
+      "data_collection/final_data/bnc/val_generation_test.jsonl",
+      "data_collection/final_data/cga_wiki/val_generation_test.jsonl"
+    ],
+    "other_excluded_files": "Batch requests/responses, intermediate annotation files, root-level copies, username/2018 variants, newer July 2025 analysis datasets, other corpora, evaluation outputs, and models."
+  },
+  "git_notes": "The 27 recommended JSONL files and this manifest are selected for the data commit. Optional and deferred datasets remain excluded. Dataset directories remain ignored; this selection is added using explicit paths."
+}
