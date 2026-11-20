@@ -1,0 +1,69 @@
+Analyze the communication styles in the specified Reddit conversations according to four dimensions: power, benevolence, arousal, and progressiveness. Definitions and response options for each dimension are provided below. Begin by reading the first four conversations. For the fifth conversation, annotate every comment according to the dimensions provided, using the same format. Select the most appropriate option from each category for each comment. Provide these annotations directly, without additional explanations or digressions.
+
+Dimensions:
+
+1. Power: This dimension gauges the extent to which an individual seeks to control or assert dominance in a conversation.
+- Options: Assertive, Confident, Neutral, Open-minded, Submissive
+
+2. Benevolence: This measures the warmth and positivity of the interactions.
+- Options: Confrontational, Dismissive, Neutral, Friendly, Supportive
+
+3. Arousal: This refers to the level of energy and excitement in the comment.
+- Options: Energetic, Neutral, Calm
+
+4. Progressiveness: This assesses the political orientation conveyed in the comment.
+- Options: Liberal, Neutral, Conservative
+
+Conversation 1:
+Turn 1: meatduck12: But what if those potential employers just don't exist? If the job market is really so bad that there are almost no jobs available in that career, shouldn't you just go for something you like a bit less but that pays more?
+Turn 2: BenIncognito: What I mean is that you can look outside of your major's "career path" to find a whole plethora of jobs. Most people I know aren't working directly in their major, but still use a lot of the skills they got with their degree. My wife got a degree in sociology, she's a Kindergarden teacher. Her degree helps inform her day to day job, and she got that job because she was able to sell herself as someone who could do it (well that and a teaching certificate). I'm not saying that any Bachelor's degree opens up literally everything you could ever want to do. But having the degree does open a lot of doors to high paying and quality careers. And yes, you will likely be doing something you like a bit less if that's your kind of lifestyle.
+Turn 3: meatduck12: So what's stopping someone from just taking the better paying degree? If you get a degree you love but your job ends up being unrelated, why not just take the better paying degree you equally like? Is it worth taking the huge gamble on getting that career you love?
+Turn 4: BenIncognito: Nothing is stopping someone from just taking the better paying degree other than personal choice and edification. If I would rather spend my studying years studying something I really love like Russian Literature then that's my prerogative. If I want to raise a family and eat then I have to find a career that affords me those goals while probably making some compromises in how I spend my time. Some people prioritize life differently, and I don't see what the problem with that is. > Is it worth taking the huge gamble on getting that career you love? Is it a huge gamble? My brother dedicated a lot of time to becoming an athlete when he was a child and through college. Then an injury knocked him out of the running for his passion and now he's a personal trainer. He's using the skills he gained reaching for his dream to live the kind of life he wants to live. Was it *practical* to focus so much on a sport? No. But did he make it work? Yes. With enough gumption (and resources to help you with your resume) you should be able to turn almost any major into a list of skills that will help you work in a practical field. So what's the downside of this "gamble"? Working a job you didn't really like to begin with. That's the status quo if you go the path you're advocating. If there's something you're really passionate about you're sure as hell never going to get a career doing it without at least trying. Edit: I would be willing to bet that most people living in poverty aren't in that situation because they choose the wrong major in college.
+
+Annotations:
+Turn 1: Confident, Dismissive, Energetic, Neutral
+Turn 2: Confident, Dismissive, Neutral, Neutral
+Turn 3: Confident, Dismissive, Energetic, Neutral
+Turn 4: Confident, Dismissive, Neutral, Neutral
+
+Conversation 2:
+Turn 1: LeMayMayPoster: Each human life literally, biologically, scientifically begins with the fertilization of an egg cell. If you want to call the "life begins at conception" thing a religious belief, it's your responsibility to explain how a dividing, growing organism with a unique genetic code is somehow not alive. Assuming you accept that the fetus is alive, the anti-abortion argument basically boils down to this: 1. Killing humans is wrong. 2. Therefore, abortion is wrong. I know you can make it a lot more complicated then that, but that's a pretty basic secular argument against abortion.
+Turn 2: : We kill living things all the time and few are bothered. No, the question of definition boil down to:   When is it a living _human_? Is four cells a human?
+Turn 3: : > Is four cells a human? And then what constitutes humanity? A conscience? So people on life support in a vegetative state or with *severe* mental handicaps not human? (not arguing, just applying further context to the statement)
+Turn 4: MegaOctopus: Honestly, I don't think most people are this logical about the whole thing.  We recognize babies on an instinctual level.  We naturally find them cute and have a desire to protect them.   We don't have the same feelings towards fetuses.  They're these weird squishy things.  They don't look human.  They look like some kind of strange alien animal.   In the end, I'd say that's ultimately what it boils down to.  There are no real rules.  There really isn't one objective definition of human life that we can refer to.  Rather, we rely on our instincts to inform our moral inclinations.  Logic is only applied after the fact.
+
+Annotations:
+Turn 1: Assertive, Confrontational, Energetic, Conservative
+Turn 2: Confident, Dismissive, Neutral, Liberal
+Turn 3: Confident, Dismissive, Neutral, Neutral
+Turn 4: Open-minded, Friendly, Calm, Neutral
+
+Conversations 3:
+Turn 1: ReclusiveNature: Not at all. I just know that I have a really negative view on it and want someone to shed some light on why people might use it.
+Turn 2: Huntingmoa: >want someone to shed some light on why people might use it. Nasal Cauterization? https://en.wikipedia.org/wiki/Cocaine#Medical
+Turn 3: ReclusiveNature: Not quite what I had in mind, but definitely a legitimate reason! I'll pass on the anesthesia and go straight for the coke if I ever need any work done.
+Turn 4: Huntingmoa: If I changed your mind, let me know! cocaine does have legitimate medical uses, even if it's fallen out of style for some uses.
+
+Annotations:
+Turn 1: Open-minded, Friendly, Neutral, Neutral
+Turn 2: Open-minded, Friendly, Neutral, Netural
+Turn 3: Open-minded, Friendly, Energetic, Netural
+Turn 4: Open-minded, Supportive, Energetic, Neutral
+
+Conversation 4:
+Turn 1: Recluse1729: Examples?
+Turn 2: thehighground: Scroll through the comments, there are numerous examples below and on every best of thread this bullshit gets posted.  Edit for these idiots: Read, it's in every thread this has been posted down in the comments, hell even people here have given examples or just read the bill, everyone has shit that is questionable.
+Turn 3: Recluse1729: I scrolled through the comments of this thread's post, but they all pretty much just say what you had said, again with with no examples. I apologize if I missed any as I am reading on my phone but I'm fairly certain I saw them all.
+Turn 4: thehighground: Then go read it under the best of sub, it's in every thread this has been posted down in the comments, hell even people here have given examples or just read the bill, everyone has shit that is questionable.  I know finding out for yourself is a challenge and you'd rather live in ignorance while believing your party does nothing wrong.
+
+Annotations:
+Turn 1: Confident, Confrontational, Neutral, Neutral
+Turn 2: Assertive, Confrontational, Energetic, Neutral
+Turn 3: Confident, Friendly, Calm, Neutral
+Turn 4: Assertive, Confrontational, Energetic, Neutral
+
+Conversation 5:
+{comment}
+
+Annotations:
+{tags}

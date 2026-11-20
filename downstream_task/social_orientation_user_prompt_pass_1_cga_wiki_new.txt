@@ -1,0 +1,87 @@
+Analyze the communication styles in the specified Wikipedia editor discussions according to four dimensions: power, benevolence, arousal, and progressiveness. Definitions and response options for each dimension are provided below. Begin by reading the first four conversations. For the fifth conversation, annotate every comment according to the dimensions provided, using the same format. Select the most appropriate option from each category for each comment. Provide these annotations directly, without additional explanations or digressions.
+
+Dimensions:
+
+1. Power: This dimension gauges the extent to which an individual seeks to control or assert dominance in a conversation.
+- Options: Assertive, Confident, Neutral, Open-minded, Submissive
+
+2. Benevolence: This measures the warmth and positivity of the interactions.
+- Options: Confrontational, Dismissive, Neutral, Friendly, Supportive
+
+3. Arousal: This refers to the level of energy and excitement in the comment.
+- Options: Energetic, Neutral, Calm
+
+4. Progressiveness: This assesses the political orientation conveyed in the comment.
+- Options: Liberal, Neutral, Conservative
+
+In the following conversations drawn from Wikipedia discussion forums, each row corresponds to a turn number, an user name, and a comment made by that user. Provide a social orientation tag for every turn in the input, and do not skip any turns. Closely follow the format in the first four examples, and finish the last sample. Do not provide any explanations.
+
+Conversation 1:
+Turn 1: Tryptofish: == Good work! ==
+Turn 2: Tryptofish: '''The Admin's Barnstar''' For the apparently thankless task of drafting a suggested closing summary at the RfC/U.
+Turn 3: The Wordsmith: Thank you for your kindness. I do make an effort to be even-handed, no matter what people wiki_link about me.
+
+Social Orientation Tags:
+Turn 1: Open-minded, Supportive, Energetic, Neutral
+Turn 2: Open-minded, Supportive, Energetic, Neutral
+Turn 3: Open-minded, Friendly, Neutral, Neutral
+
+Conversation 2:
+Turn 1: Gritzko: ==  is under a criminal investigation]] ==
+Turn 2: Gritzko: I am rather pleased to relay that here: Sergey Rublyov aka Ssr who was rather active in curating this article is currently under an actual criminal investigation as his PR services to Mr. Misharin were illegally paid. Namely, 66.ru and politsovet.ru report that Mr Rublyov was provided with a mock employment at a regional energy company as an "engineer" (being a journalist by education). The regional prosecutor's office investigates the incident. [EXTERNA_LINK: http://politsovet.ru/40903-delo-o-mertvyh-dushah-rabota-formanchuka-mozhet-zakonchitsya-ugolovnym-delom.html] [EXTERNA_LINK: http://66.ru/news/society/131688/] Regional MP Alshevskikh confirms on Twitter: [EXTERNA_LINK: https://twitter.com/Alshevskix/status/299147903560204289] Well, it was really stupid from Mr Rublyov to do drunk posts on LiveJournal insulting his past employers.
+Turn 3: Ssr: Any relation of this info to work on current Wikipedia article? You personally are not recommended to appear here by independent mediators, don't you remember? (because of your and your friends' persistent attempts to violently use Wikipedia for political attacks—while I was acting correctly according to rules, see also Russian article/talk—and your edits to both were totally wiped out) No "past employers" were insulted BTW.
+Turn 4: 2A02:6B8:0:107:D83D:EE04:EA8D:1553: How unfortunate, I am not illegally employed full-time to whitewash reputations of corrupted politicians. Hence, I do not have that much time to defend my edits. But maybe, I will make another attempt.
+Turn 5: Ssr: I doubt you are able (if this long number is you) because _several_ independent mediators in ru end en after many long-time investigations decided that you and your friends try to violate wikipedia for political purposes so no luck for you here (read posts above including links to mediations—don't forget!). Such posts as this particular your post are not welcome here because it's unrelated to work on the article and may be deleted as off-topic (in ru this is widely practiced).
+Turn 6: Gritzko: I am pretty sure you are not talking to me now because you certainly know that I certainly know that you are lying. I'll make my edits this Saturday, be prepared.
+Turn 7: Ssr: No need for me to be prepared, I am, as you, a COI party, am not going to edit, and mediators will do their job well as they did before (many thanks again to them for their great work).
+Turn 8: Ssr: *Also, there's an arbitraiton warning for other Gritzko's violations: wiki_link, so he must be under strict control, as his "warnings" most probably indicate further violations.
+
+Social Orientation Tags:
+Turn 1: Assertive, Confrontational, Energetic, Neutral
+Turn 2: Assertive, Confrontational, Energetic, Neutral
+Turn 3: Assertive, Confrontational, Energetic, Neutral
+Turn 4: Assertive, Confrontational, Energetic, Neutral
+Turn 5: Assertive, Confrontational, Energetic, Neutral
+Turn 6: Assertive, Confrontational, Energetic, Neutral
+Turn 7: Confident, Dismissive, Neutral, Neutral
+Turn 8: Confident, Dismissive, Neutral, Neutral
+
+Conversation 3:
+Turn 1: DarkHero: check the sig.
+Turn 2: DarkHero: Leaked Info?
+Turn 3: Sukecchi: I highly doubt those are real. - I doubt it too...but I still wonder
+Turn 4: BrydoF1989: Fat chance. These appear to be the creatures from Telefang O_o
+Turn 5: Joizashmo: I think they look more like Digimon than Pokémon.
+Turn 6: Rat235478683: The middle one looks like the evolved form of Heracross.Rat235478683
+Turn 7: 68.65.113.160: Hi, I'm Kojiro who had that sig. They were indeed Telefang, I just wanted too see how many people believed it. XD I didn't mean to cause any trouble.
+
+Social Orientation Tags:
+Turn 1: Neutral, Neutral, Calm, Neutral
+Turn 2: Neutral, Neutral, Calm, Neutral
+Turn 3: Confident, Neutral, Calm, Neutral
+Turn 4: Confident, Neutral, Calm, Neutral
+Turn 5: Confident, Neutral, Calm, Neutral
+Turn 6: Confident, Neutral, Calm, Neutral
+Turn 7: Submissive, Friendly, Calm, Neutral
+
+Conversation 4:
+Turn 1: Jack1234567891011121314151617: Multiculturalism
+Turn 2: Jack1234567891011121314151617: So i think it's false to say that the alt right opposes multiculturalism. Because from what i've understood they basically want an white ethno state where all europeans would be welcome. How would they have an white ethno state without many cultures? The alt right might say they are against it but they don't seem to  understand that they basically advocate for a multicultural state
+Turn 3: Lukacris: While race and culture aren't exactly the same thing, I think it's fair to conceptualize white nationalism as antithetical to multiculturalism.
+Turn 4: Jack1234567891011121314151617: @Lukacris I know that race and culture aren't the same thing obviously, but what i meant is that ultimate goal for the alt right is the ethno state where ALL whites would be welcome. If all whites with many different cultures  are welcome then they're for multiculturalism.  — Preceding unsigned comment added by   •
+Turn 5: Beyond My Ken: This is general discussion of the topic  i.e. WP:NOTAFORUM  and not about how to improve the article.  If Jack123... has a reliable source that says that the alt-right is not opposed to mutliculturalism. he should provide it.
+Turn 6: Jack1234567891011121314151617: @Beyond My Ken Don't you think that the alt right advocating for an ethno state is evidence enough?
+
+Social Orientation Tags:
+Turn 1: Neutral, Neutral, Calm, Neutral
+Turn 2: Confident, Dismissive, Neutral, Neutral
+Turn 3: Confident, Neutral, Neutral, Neutral
+Turn 4: Assertive, Confrontational, Energetic, Neutral
+Turn 5: Neutral, Neutral, Calm, Neutral
+Turn 6: Assertive, Confrontational, Energetic, Neutral
+
+Conversation 5:
+{comment}
+
+Social Orientation Tags:
+{tags}

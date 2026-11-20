@@ -1,0 +1,55 @@
+{
+    "model_type": "facebook/bart-base",
+    "model_name": "bart-bnc-no-last-turn-circumplex-tags",
+    "load_model": "",
+    "load_classification_head": false,
+    "saved_model_path": "./checkpoints/",
+
+    "dataset_dir": "./data_collection/final_data/bnc/",
+    "train_filename": "train_circumplex.jsonl",
+    "train_text_source": "real",
+    "val_filename": "val_circumplex.jsonl",
+    "val_text_source": "real",
+    "test_filename": "test_circumplex.jsonl",
+    "test_text_source": "real",
+    "label_type": "toxic_label",
+    "keep_first_turn": true,
+    "data_fraction": 1.0,
+    "majority_voting": false,
+    "use_social_orientation": true,
+    "keep_last_turn": false,
+    "keep_first_n_turns": 10000000,
+
+    "use_lora": false,
+
+    "max_context_length": 1024,
+    "batch_size": 32,
+    "gradient_accumulation_steps": 1,
+    "weight_decay": 0.01,
+    "max_lr": 0.00002,
+    "min_lr": 0.000002,
+    "cycle_epochs": 15,
+    "warmup_epochs": 0.5,
+    "lr_gamma": 1.0,
+    "grad_clip": 5.0,
+    "flash_attn": true,
+    "test_on_best_model": true,
+
+    "num_epochs": 15,
+
+    "dtype": "float32",
+    "activation_checkpointing": false,
+
+    "seed": 26403,
+    "device": "cuda",
+    "num_workers": 1,
+    "tensorboard_log_dir": "./logs/",
+    "use_amp": true,
+
+    "do_sample": true,
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 40,
+    "repetition_penalty": 1.15,
+    "stop_sequence": "\n\n"
+}

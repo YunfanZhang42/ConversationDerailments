@@ -1,0 +1,61 @@
+Analyze the communication styles in the specified Reddit conversations according to four dimensions: power, benevolence, arousal, and progressiveness. Definitions and response options for each dimension are provided below. Begin by reading the first four conversations. For the fifth conversation, annotate every comment according to the dimensions provided, using the same format. Select the most appropriate option from each category for each comment. Provide these annotations directly, without additional explanations or digressions.
+
+Dimensions:
+
+1. Power: This dimension gauges the extent to which an individual seeks to control or assert dominance in a conversation.
+- Options: Assertive, Confident, Neutral, Open-minded, Submissive
+
+2. Benevolence: This measures the warmth and positivity of the interactions.
+- Options: Confrontational, Dismissive, Neutral, Friendly, Supportive
+
+3. Arousal: This refers to the level of energy and excitement in the comment.
+- Options: Energetic, Neutral, Calm
+
+4. Progressiveness: This assesses the political orientation conveyed in the comment.
+- Options: Liberal, Neutral, Conservative
+
+Conversation 1:
+Turn 1: meatduck12: But what if those potential employers just don't exist? If the job market is really so bad that there are almost no jobs available in that career, shouldn't you just go for something you like a bit less but that pays more?
+Turn 2: BenIncognito: What I mean is that you can look outside of your major's "career path" to find a whole plethora of jobs. Most people I know aren't working directly in their major, but still use a lot of the skills they got with their degree. My wife got a degree in sociology, she's a Kindergarden teacher. Her degree helps inform her day to day job, and she got that job because she was able to sell herself as someone who could do it (well that and a teaching certificate). I'm not saying that any Bachelor's degree opens up literally everything you could ever want to do. But having the degree does open a lot of doors to high paying and quality careers. And yes, you will likely be doing something you like a bit less if that's your kind of lifestyle.
+Turn 3: meatduck12: So what's stopping someone from just taking the better paying degree? If you get a degree you love but your job ends up being unrelated, why not just take the better paying degree you equally like? Is it worth taking the huge gamble on getting that career you love?
+
+Annotations:
+Turn 1: Confident, Dismissive, Energetic, Neutral
+Turn 2: Confident, Dismissive, Neutral, Neutral
+Turn 3: Confident, Dismissive, Energetic, Neutral
+
+Conversation 2:
+Turn 1: LeMayMayPoster: Each human life literally, biologically, scientifically begins with the fertilization of an egg cell. If you want to call the "life begins at conception" thing a religious belief, it's your responsibility to explain how a dividing, growing organism with a unique genetic code is somehow not alive. Assuming you accept that the fetus is alive, the anti-abortion argument basically boils down to this: 1. Killing humans is wrong. 2. Therefore, abortion is wrong. I know you can make it a lot more complicated then that, but that's a pretty basic secular argument against abortion.
+Turn 2: : We kill living things all the time and few are bothered. No, the question of definition boil down to:   When is it a living _human_? Is four cells a human?
+Turn 3: : > Is four cells a human? And then what constitutes humanity? A conscience? So people on life support in a vegetative state or with *severe* mental handicaps not human? (not arguing, just applying further context to the statement)
+
+Annotations:
+Turn 1: Assertive, Confrontational, Energetic, Conservative
+Turn 2: Confident, Dismissive, Neutral, Liberal
+Turn 3: Confident, Dismissive, Neutral, Neutral
+
+Conversations 3:
+Turn 1: ReclusiveNature: Not at all. I just know that I have a really negative view on it and want someone to shed some light on why people might use it.
+Turn 2: Huntingmoa: >want someone to shed some light on why people might use it. Nasal Cauterization? https://en.wikipedia.org/wiki/Cocaine#Medical
+Turn 3: ReclusiveNature: Not quite what I had in mind, but definitely a legitimate reason! I'll pass on the anesthesia and go straight for the coke if I ever need any work done.
+
+Annotations:
+Turn 1: Open-minded, Friendly, Neutral, Neutral
+Turn 2: Open-minded, Friendly, Neutral, Netural
+Turn 3: Open-minded, Friendly, Energetic, Netural
+
+Conversation 4:
+Turn 1: Recluse1729: Examples?
+Turn 2: thehighground: Scroll through the comments, there are numerous examples below and on every best of thread this bullshit gets posted.  Edit for these idiots: Read, it's in every thread this has been posted down in the comments, hell even people here have given examples or just read the bill, everyone has shit that is questionable.
+Turn 3: Recluse1729: I scrolled through the comments of this thread's post, but they all pretty much just say what you had said, again with with no examples. I apologize if I missed any as I am reading on my phone but I'm fairly certain I saw them all.
+
+Annotations:
+Turn 1: Confident, Confrontational, Neutral, Neutral
+Turn 2: Assertive, Confrontational, Energetic, Neutral
+Turn 3: Confident, Friendly, Calm, Neutral
+
+Conversation 5:
+{comment}
+
+Annotations:
+{tags}
